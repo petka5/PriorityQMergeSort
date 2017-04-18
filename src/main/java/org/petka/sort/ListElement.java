@@ -2,28 +2,38 @@ package org.petka.sort;
 
 import java.util.List;
 
-public class Element<T extends List<E>, E extends Comparable<E>> implements Comparable<Element<T, E>> {
-    private T source;
+/**
+ * Implementation of PriorityQMergeSort that holds List
+ * 
+ * @author Petka
+ *
+ * @param <T>
+ * @param <E>
+ */
+public class ListElement<T extends List<E>, E extends Comparable<E>> extends PriorityQMergeSort<T, E> {
 
-    public Element(T source) {
+    public ListElement(T source) {
         this.source = source;
     }
 
-    public E getNextElement() {
+    @Override
+    public E getNext() {
         return this.source.remove(0);
     }
 
-    public boolean hasMoreElements() {
+    @Override
+    public boolean hasNext() {
         return source.size() != 0;
     }
 
-    protected E checkNextElement() {
+    @Override
+    public E checkNext() {
         return this.source.get(0);
     }
 
     @Override
-    public int compareTo(Element<T, E> o) {
-        return checkNextElement().compareTo(o.checkNextElement());
+    public int compareTo(PriorityQMergeSort<T, E> o) {
+        return checkNext().compareTo(o.checkNext());
     }
 
 }
