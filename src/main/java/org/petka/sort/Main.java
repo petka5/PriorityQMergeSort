@@ -51,12 +51,12 @@ public class Main {
 
     private static ListElement<List<Long>, Long> createElement() {
         List<Long> list = new ArrayList<>();
-        fillList(list);
+        fillList(list,random.nextInt(100));
         return new ListElement<List<Long>, Long>(list);
     }
 
-    private static void fillList(List<Long> list) {
-        for (int i = 0; i < 10; i++) {
+    private static void fillList(List<Long> list, int size) {
+        for (int i = 0; i < size; i++) {
             list.add(Long.valueOf(random.nextInt(100)));
         }
         Collections.sort(list);
