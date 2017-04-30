@@ -6,7 +6,11 @@ Input collections are wrapped by [PriorityQMergeSort](src/main/java/org/petka/so
 [PriorityQMergeSorter](src/main/java/org/petka/sort/PriorityQMergeSorter.java)
 
 
-#Requirements
+# Requirements
 Java 1.7 or higher
 
-#Getting started
+# Getting started
+``` java
+        PriorityQMergeSorter<ListElement<List<Long>, Long>, List<Long>, Long> prioritySort = new PriorityQMergeSorter<>();
+
+``` 
