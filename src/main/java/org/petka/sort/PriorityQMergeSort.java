@@ -20,30 +20,59 @@ public class PriorityQMergeSort<T, E> implements Comparable<PriorityQMergeSort<T
      */
     private T source;
 
+    /**
+     * getNext lambda
+     */
     private Function<T, E> getNext;
-
+    /**
+     * hasNext lambda
+     */
     private Predicate<T> hasNext;
-
+    /**
+     * checkNext lambda
+     */
     private Function<T, E> checkNext;
-
+    /**
+     * lambda comparator
+     */
     private Comparator<PriorityQMergeSort<T, E>> comparator;
 
     public PriorityQMergeSort(T source) {
         this.source = source;
     }
 
+    /**
+     * Set getNext lambda.
+     * 
+     * @param getNext
+     */
     public void setGetNext(Function<T, E> getNext) {
         this.getNext = getNext;
     }
 
+    /**
+     * Set hasNext lambda.
+     * 
+     * @param hasNext
+     */
     public void setHasNext(Predicate<T> hasNext) {
         this.hasNext = hasNext;
     }
 
+    /**
+     * Set checkNext lambda.
+     * 
+     * @param checkNext
+     */
     public void setCheckNext(Function<T, E> checkNext) {
         this.checkNext = checkNext;
     }
 
+    /**
+     * Set lambda comparator.
+     * 
+     * @param comparator
+     */
     public void setComparator(Comparator<PriorityQMergeSort<T, E>> comparator) {
         this.comparator = comparator;
     }
