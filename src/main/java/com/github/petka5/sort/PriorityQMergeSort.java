@@ -1,4 +1,4 @@
-package org.petka.sort;
+package com.github.petka5.sort;
 
 /**
  * 
