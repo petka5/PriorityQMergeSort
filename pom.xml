@@ -11,6 +11,13 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
+	<scm>
+		<connection>scm:git:git://github.com/petka5/PriorityQMergeSort.git</connection>
+		<developerConnection>scm:git:ssh://github.com/petka5/PriorityQMergeSort.git</developerConnection>
+		<url>https://github.com/petka5/PriorityQMergeSort/</url>
+	</scm>
+
+
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
