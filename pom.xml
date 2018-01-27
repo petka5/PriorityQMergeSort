@@ -14,10 +14,10 @@
 		http://www.sonatype.org/nexus/2015/01/08/deploy-to-maven-central-repository/ 
 	 -->
 	<scm>
-		<connection>scm:git:git://github.com/petka5/PriorityQMergeSort.git</connection>
-		<developerConnection>scm:git:ssh://github.com/petka5/PriorityQMergeSort.git</developerConnection>
+		<connection>scm:git:git@github.com:petka5/PriorityQMergeSort1.git</connection>
+		<developerConnection>scm:git:git@github.com:petka5/PriorityQMergeSort2.git</developerConnection>
 		<url>https://github.com/petka5/PriorityQMergeSort/</url>
-  </scm>
+	</scm>
 
 
 	<distributionManagement>
