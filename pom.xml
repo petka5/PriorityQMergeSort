@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.petka5</groupId>
 	<artifactId>PriorityQMergeSort</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>PriorityQMergeSort</name>
 
 	<properties>
@@ -17,7 +17,8 @@
 		<connection>scm:git:git@github.com:petka5/PriorityQMergeSort1.git</connection>
 		<developerConnection>scm:git:git@github.com:petka5/PriorityQMergeSort2.git</developerConnection>
 		<url>https://github.com/petka5/PriorityQMergeSort/</url>
-	</scm>
+	  <tag>PriorityQMergeSort-0.0.1</tag>
+  </scm>
 
 
 	<distributionManagement>
