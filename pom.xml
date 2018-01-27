@@ -20,11 +20,13 @@
         <name>Petka</name>
         <url>https://github.com/petka5</url>
     </organization>
-
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
+	<developers>
+		<developer>
+			<id>Petka</id>
+			<name>Petka</name>
+			<email>petar.georgiev@gmail.com</email>
+		</developer>
+	</developers>    
 	<!-- http://www.sonatype.org/nexus/2015/01/07/using-maven-to-assemble-and-release-artifacts-to-nexus/ 
 		http://www.sonatype.org/nexus/2015/01/08/deploy-to-maven-central-repository/ 
 	-->
@@ -35,6 +37,11 @@
 		<tag>HEAD</tag>
 	</scm>
 
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 
 	<distributionManagement>
 		<snapshotRepository>
