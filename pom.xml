@@ -1,24 +1,40 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.petka5</groupId>
 	<artifactId>PriorityQMergeSort</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<name>PriorityQMergeSort</name>
 
+	<description>
+    	Merging several sorted collections, with different sizes, into one sorted collection via PriorityQueue.
+    </description>
+	<url>https://github.com/petka5/PriorityQMergeSort</url>
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+	
+	<organization>
+        <name>Petka</name>
+        <url>https://github.com/petka5</url>
+    </organization>
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	<!--
-		http://www.sonatype.org/nexus/2015/01/07/using-maven-to-assemble-and-release-artifacts-to-nexus/
+	<!-- http://www.sonatype.org/nexus/2015/01/07/using-maven-to-assemble-and-release-artifacts-to-nexus/ 
 		http://www.sonatype.org/nexus/2015/01/08/deploy-to-maven-central-repository/ 
-	 -->
+	-->
 	<scm>
 		<connection>scm:git:git@github.com:petka5/PriorityQMergeSort.git</connection>
 		<developerConnection>scm:git:git@github.com:petka5/PriorityQMergeSort.git</developerConnection>
 		<url>https://github.com/petka5/PriorityQMergeSort/</url>
-    <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 
 
 	<distributionManagement>
